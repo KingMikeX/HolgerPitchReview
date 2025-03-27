@@ -70,7 +70,6 @@ export default function App() {
             onChange={(e) => handleChange(index, "weight", e.target.value)}
           />
           <div>Gewichteter Score: {(row.score * row.weight * getDynamicWeight(row, index)).toFixed(2)}</div>
-          <div>Mod: x{getDynamicWeight(row, index).toFixed(2)}</div>
         </div>
       ))}
       <div style={{ fontWeight: "bold", fontSize: "1.2rem", marginTop: "1rem" }}>
