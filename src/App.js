@@ -69,7 +69,7 @@ export default function App() {
             value={row.weight}
             onChange={(e) => handleChange(index, "weight", e.target.value)}
           />
-          <div>Gewichteter Score: {(row.score * row.weight * getDynamicWeight(row, index)).toFixed(2)}</div>
+          <div>Gewichteter Score: {(row.score * row.weight).toFixed(2)}</div>
         </div>
       ))}
       <div style={{ fontWeight: "bold", fontSize: "1.2rem", marginTop: "1rem" }}>
@@ -78,3 +78,4 @@ export default function App() {
     </div>
   );
 }
+// * getDynamicWeight(row, index)
