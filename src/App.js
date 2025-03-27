@@ -47,7 +47,7 @@ export default function App() {
       ? weightedScores.reduce((sum, s) => sum + s, 0) / totalWeight
       : 0;
 
-  const recommendation = totalScore >= 6.5 ? "Pitch annehmen" : totalScore >= 5 ? "Genau abwägen" : "Nicht empfehlenswert";
+  const recommendation = totalScore >= 7 ? "Pitch annehmen" : totalScore >= 5 ? "Genau abwägen" : "Nicht empfehlenswert";
 
   return (
     <div style={{ maxWidth: "800px", margin: "0 auto" }}>
